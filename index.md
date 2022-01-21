@@ -1,3 +1,3 @@
 ## Tauntedechoes.com
 
-Someday?
+This is a placeholder page. 
