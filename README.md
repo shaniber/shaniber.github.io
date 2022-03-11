@@ -1,3 +1,3 @@
 # shaniber.github.io
 
-Currently a placeholder for my personal homepage. 
+A placeholder for a personal homepage, and a testing ground.
