@@ -30,6 +30,9 @@ let config={
         {
             name:"Auctions",
             links:[
+                {   name:"Bodnarus Auctioneering",
+                    url:"https://www.bodnarusauctioneering.ca/"
+                },
                 {
                     name:"PBR Auctions",
                     url:"https://pbrauctions.com/auctions/"
