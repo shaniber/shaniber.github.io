@@ -38,5 +38,5 @@ cat <<EOF > "${stub}/index.html"
 EOF
 util::print "${bold}${green}DONE${noColour}\n\n"
 
-util::print "Check the stub, then push the change to GitHub: ${bold}git push${noColour}\n\n"
+util::print "Check the stub, then commit and push the change to GitHub:\n\n   ${bold}git add ${stub}${noColour}\n   ${bold}git push${noColour}\n\n"
 
