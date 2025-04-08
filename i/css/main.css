@@ -320,6 +320,8 @@ p.main {
 }
 
 .Layout_Container__2Hv3J {
+    --color-background: #242b33;
+    background-color: var(--color-background);
     width: 100%;
     padding: 20px;
     margin: 0 auto
