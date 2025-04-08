@@ -1,0 +1,218 @@
+<HTML>
+
+<head>
+	<title>shaniber.net -- adventures in game programming</title>
+	<link rel="stylesheet" 
+	      type="text/css"
+	      href="./shaniber.css">
+	<meta name="GENERATOR" 
+	      content="My Warped Mind">
+	<meta name="DESCRIPTION" 
+	      content="Shane Doucette's Game Programming with Allegro,
+		           DJGPP, and MS Visual Studio, for Windows and Linux">
+	<meta name="KEYWORDS" 
+	      content="game programming, games, Allegro, DJGPP, Visual Studio,
+		           Windows, Linux, shaniber">
+</head>
+
+<body>
+
+<center>
+<table border=0 cellpadding=2 cellspacing=0 width=75% class=bg><tr><td>
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr><!-- header row -->
+			<td class=header align=center valign=center>
+				<h1>s h a n i b e r . n e t</h1>
+				Adventures in Game Programming
+			</td>
+		</tr>
+	</table>
+</td></tr></table>
+
+<br>
+
+<table border=0 cellpadding=2 cellspacing=0 width=75% class=bg><tr><td>
+	<center>
+	<table border=0 cellpadding=5 cellspacing=0 width=100%>
+		<tr>
+			<td class=links width="33%">
+				<center>
+				<a href="about.html">a b o u t &nbsp; m e</a>
+				</center>
+			</td>
+			<td class=links width="33%">
+				<center>
+				<a href="links.html">l i n k s</a>
+				</center>
+			</td>
+			<td class=links width="33%">
+				<center>
+				<a href="projects">p r o j e c t s</a>
+				</center>
+			</td>
+		</tr>
+	</table>
+	</center>
+</td> </tr> </table>
+
+<br>
+
+<table border=0 cellpadding=2 cellspacing=0 width=75% class=bg><tr><td>
+<table border=0 cellpadding=7 cellspacing=0 width=100%>
+	<tr>
+		<td class=bod>
+			<center>	
+			Welcome to my website!  It was last updated 08 July 2000.
+			</center>
+
+			<p align=justify> 
+			Here, I shall chronicle my attempts at brushing up on my programming
+			skills, and learning the 
+			<a href="http://www.talula.demon.co.uk/allegro/">Allegro Game
+			Programming Library</a>.  I'll keep my last 5 projects on the front
+			page for easy viewing.  Yes, I realize that it isn't actually
+			<b>shaniber.net</b>, but someday, baby, someday!
+			</p>
+
+			<p align=justify>
+			My current setup at home is a cobbled together AMD K6-233 with
+			64MB of RAM and a 4GB of hard drive.  I'm running Windows 98.  
+			I'm using <a href="http://msdn.microsoft.com/vstudio/">
+			Microsoft Visual Studio 6 Pro</a>, <a href="http://www.delorie.com">
+			the latest DJPGG from Delorie Software</a>, and the 
+			<a href="http://sunsite.auc.dk/allegro/wip.html">3.9.32 WIP
+			of Allegro</a>.  Right now, I'm just posting the source code for my
+			projects, but I'm hoping to work them up into a sort of tutorial for
+			people who are just starting out.
+			</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class=bod>
+			<table border=0 cellpadding=2 cellspacing=2 width=100%>
+				<tr>
+					<td class=bod valign=top>
+						<center>
+						<a href="projects/MovingCircle">
+						<img src="images/circle_t.jpg"
+						     width=100 height=100
+							 alt="Moving Circle Screenshot"></a>
+						</center>
+					</td>
+					<td class=bod valign=top>
+						<b>Moving Circle</b> &nbsp; &nbsp; <i>09 July 2000</i><br>
+						<p align=justify>
+						A circle moves across the screen.  Use of the 'blit' function
+						to show double buffering.  Enjoy.
+						<a href="projects/MovingCircle">CLICK HERE for the detailed 
+						description</a>.  </p>
+						&nbsp;<br>
+					</td>
+				</tr>
+				<tr>
+					<td class=bod valign=top>
+						<center>
+						<a href="projects/Primitives">
+						<img src="images/primitives_t.jpg"
+						     width=100 height=100
+							 alt="Primitives Screenshot"></a>
+						</center>
+					</td>
+					<td class=bod valign=top>
+						<b>Primitives</b> &nbsp; &nbsp; <i>08 July 2000</i><br>
+						<p align=justify>
+						This project was to give me exercise in determining screen
+						coordinates, as well as to let me try out some of the
+						primitive-drawing functions.
+						<a href="projects/Primitives">CLICK HERE for the detailed 
+						description</a>.  </p>
+						&nbsp;<br>
+					</td>
+				</tr>
+				<tr>
+					<td class=bod valign=top>
+						<center>
+						<a href="projects/Screenshots">
+						<img src="images/noscreenshot.jpg"
+						     width=100 height=100
+							 alt="No Screenshot Yet"></a>
+						</center>
+					</td>
+					<td class=bod valign=top>
+						<b>Screenshots</b> &nbsp; &nbsp; <i>04 July 2000</i><br>
+						<p align=justify>
+						My second project, I modified the source of <a href="projects/HelloWorld">
+						Hello World</a>, so that I could take screenshots from within the program.
+						And yes, I understand the irony of not having a screenshot up for this one
+						yet.  :) <a href="projects/Screenshots">CLICK HERE for the detailed
+						description</a>.  </p>
+						&nbsp;<br>
+					</td>
+				</tr>
+				<tr>
+					<td class=bod valign=top>
+						<center>
+						<a href="projects/HelloWorld">
+						<img src="images/HW_t.jpg" 
+						     width="100" height="100" 
+							 alt="Hello World Screenshot"></a>
+						</center>
+					</td>
+					<td class=bod valign=top>
+						<b>Hello World</b> &nbsp; &nbsp; <i>30 June 2000</i><br>
+						<p align=justify>
+						This is my first project, based on 
+						<a href="http://members.xoom.com/dynasta/allegro_tutorial/index.html">
+						James Johnson's Allegro Tutorial</a>.  Actually, the code is 
+						copied word-for-word, but hey, its just a silly Hello World 
+						program.  <a href="projects/HelloWorld">CLICK HERE for the detailed 
+						description</a>.
+						</p>
+						&nbsp; <br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</td></tr></table>
+
+<br>
+
+<table border=0 cellpadding=2 cellspacing=0 width=75% class=bg><tr><td>
+	<table border=0 cellpadding=5 cellspacing=0 width=100%>
+		<tr>
+			<td class=foot>
+				<center>
+				Questions?  Concerns?  Comments?  Just wanna blab?  Send email to me at:
+                [an email address that no longer exists].
+				<br>
+				Except where noted, the content on this page and the pages within this 
+				site is &copy;2000 Shane Doucette.  All other material is &copy; its
+				respective owners.  All Rights Reserved.
+				<p>
+				<i class=sm>The cheese is here... fear the cheese!!!</i>
+			</td>
+		</tr>
+	</table>
+</table>
+<a target="_top" href="http://t.extreme-dm.com/?login=shaniber">
+<img name=im src="http://t1.extreme-dm.com/i.gif" height=38
+border=0 width=41 alt=""></a><script language="javascript"><!--
+an=navigator.appName;d=document;function
+pr(){d.write("<img src=\"http://t0.extreme-dm.com",
+"/0.gif?tag=shaniber&j=y&srw="+srw+"&srb="+srb+"&",
+"rs="+r+"&l="+escape(d.referrer)+"\" height=1 ",
+"width=1>");}srb="na";srw="na";//-->
+</script><script language="javascript1.2"><!--
+s=screen;srw=s.width;an!="Netscape"?
+srb=s.colorDepth:srb=s.pixelDepth;//-->
+</script><script language="javascript"><!--
+r=41;d.images?r=d.im.width:z=0;pr();//-->
+</script><noscript><img height=1 width=1 alt="" 
+src="http://t0.extreme-dm.com/0.gif?tag=shaniber&j=n"></noscript>
+
+</body>
+
+</HTML>

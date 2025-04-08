@@ -1,0 +1,52 @@
+body {
+	background:  #8a8a8a;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table.bg {
+	background:  #000000;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   48px;
+}
+
+td.header {
+	background:  #009999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   24px;
+}
+
+td.links {
+	background:  #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   24px;
+}
+
+td.bod {
+	background:  #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   18px;
+}
+
+td.foot {
+	background:  #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   14px;
+}
+
+a:link {
+	color:       #006161;
+}
+
+a:visited {
+	color:       #003333;
+}
+
+i.sm {
+	font-size:   12px;
+}
+
+b.section {
+	font-size:   22px;
+}
