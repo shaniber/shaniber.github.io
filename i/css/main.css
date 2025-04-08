@@ -63,7 +63,8 @@
 }
 
 body {
-    --color-background: #242b33;
+    /*--color-background: #242b33;*/
+    --color-background: #8a8a8a;
     --color-primary: #effbff;
     --color-accent: #6ee2ff;
     --spacing-ui: 10px;
