@@ -1,0 +1,63 @@
+<html>
+<head>
+  <title>CD database - Edit</title>
+</head>
+
+<body bgcolor="#fafbfa">
+<font face="arial,helvetica" size=+1>
+
+<center>
+<map name="map1">
+<area shape="rect" coords="0,50,125,81" href="search.html" alt="search">
+<area shape="rect" coords="140,50,205,81" href="add.html" alt="add">
+<! area shape="rect" coords="220,50,280,81" href="edit.html" alt="edit">
+<area shape="rect" coords="300,50,412,81" href="delete.html" alt="delete">
+</map>
+<img width=412 height=81 border=0 src="images/buttonbar.jpg" usemap="#map1" 
+ismap> <p>
+<a href="search.html">search</a>&nbsp;
+<a href="add.html">add</a>&nbsp;
+edit&nbsp;
+<a href="delete.html">delete</a>
+<p>
+
+<form method="post" action="cgi-bin/edit.cgi">
+<table border=2 cellpadding=2>
+  <tr>
+    <th colspan=3 align=center bgcolor="#ffffff">
+      <img src="images/edit.jpg" alt="edit">
+    </th>
+  <tr bgcolor="#cccccc">
+    <td>Search the CD database</td>
+    <td>For text matching</td>
+    <td>Options</td>
+  </tr>
+  <tr bgcolor="#fff8dc">
+    <td>
+      <input type="radio" name="qtype" value="bygroup" checked>By group/artist<br>
+      <input type="radio" name="qtype" value="byalbum">By album title<br>
+      <input type="radio" name="qtype" value="bylabel">By label<br>
+      <input type="radio" name="qtype" value="bysong">By song title<br>
+    </td>
+    <td>
+      <input name="qstr">
+    </td>
+    <td>
+      <input type="radio" name="qopt" value="substr" checked>Substring match<br>
+      <input type="radio" name="qopt" value="fullstr"> Full string match<br>
+    </td>
+  </tr>
+  <tr bgcolor="#fafbfa">
+    <th colspan=3 align=center>
+      <input type="submit" value="submit">
+    </th>
+  </tr>
+
+</table>
+</form>
+
+<a href="index.html">Go Main</a>
+
+</center>
+</body>
+</html>

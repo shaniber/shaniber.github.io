@@ -1,0 +1,283 @@
+#!/usr/local/bin/perl
+
+use CGI;
+
+use Msql;
+$cgiquery = new CGI;
+$server = "alf.usask.ca";
+$database = "cmpt374group11";
+
+print $cgiquery->header;
+print "Content-type:text/html\n\n";
+$dbproc = Connect Msql $server, $database||print "Cannot connect to server";
+
+$nom = $cgiquery->param('group');
+$albania = $cgiquery->param('album');
+$gen =  $cgiquery->param('genre');
+$lab =  $cgiquery->param('label');
+$labloc =  $cgiquery->param('labelloc');
+$tracnum =  $cgiquery->param('numtracks');
+$groupurl =  $cgiquery->param('groupurl');
+$soundurl =  $cgiquery->param('soundurl');
+
+ 
+
+
+$nom=uc($nom);
+$albania = uc($albania);
+$gen = uc($gen);
+$lab = uc($lab); 
+$labloc = uc($labloc);
+$soundurl =  uc($soundurl);
+$groupurl =  uc($groupurl);   
+
+
+
+print "<H2> Results </H2>";
+
+
+
+
+
+$mpr = "Select SOUNDS.ALBUM_NO from SOUNDS,ALBUM where
+ALBUM.ALBUM_NO = SOUNDS.ALBUM_NO and ALBUM.ALBUM_NAME = '$nom' 
+and SOUNDS.SOUND_FILE_LOCATION = '$soundurl'";
+ $vga = Query $dbproc $mpr;
+
+
+ @taz = FetchRow $vga;
+
+if (@taz!=())
+   {
+   $rows4 = $taz[0];
+   }
+else {
+     $lb = "Select * from SOUNDS ";
+     $go = $dbproc->query($lb);
+     $rows4=$go->numrows;
+     ++$rows4;
+     }
+
+   
+
+
+
+
+
+
+
+
+
+ $xzy = "Select LABEL.LABEL_NO from LABEL where
+ LABEL.LABEL_NAME = '$lab'";
+  $gdr = Query $dbproc $xzy;
+ @tar = FetchRow $gdr; 
+
+if (@tar!=())
+   { 
+   $rows2 = $tar[0];
+   }
+   else
+   {
+   $la = "Select * from LABEL ";
+   $gz = $dbproc->query($la);
+    $rows2=$gz->numrows;
+     ++$rows2;
+     
+   }   
+
+
+
+
+$sql = "Select ALBUM.ALBUM_NAME from ALBUM where ALBUM.ALBUM_NAME = 
+'$albania' and ALBUM.GROUP_NAME = '$nom'"; 
+$sth = Query $dbproc $sql; 
+
+
+$la = "Select * from LABEL ";
+$gz = $dbproc->query($la);
+
+#$rows2=$gz->numrows;
+
+
+
+#$ql = "Select ALBUM.ALBUM_NAME from ALBUM ";
+$ql = "Select * from ALBUM ";
+$th = $dbproc->query($ql);
+
+
+
+
+$rows=$th->numrows;
+
+
+
+@arr = FetchRow $sth;
+$new = $arr[0];
+++$rows;
+#++$rows2;
+
+  
+if (!($albania eq  $arr[0]))
+{
+
+ $ist = "insert into ALBUM values 
+($rows,'$albania','$nom',$rows2,$tracnum,$rows4)";
+ $qu  = Query $dbproc $ist;
+ print "submitted $nom\n";
+}
+else {print "this qroup already exits\n";}
+
+
+
+
+
+
+
+
+
+$qsl = "Select GROUP_NAMES.GROUP_NAME from GROUP_NAMES where 
+GROUP_NAMES.GROUP_NAME = '$nom'"; $tsh = Query $dbproc $qsl;
+
+
+@arr = FetchRow $tsh;
+$new = $arr[0];
+
+
+if (!($nom eq  $arr[0]))
+{
+
+
+ $ist = "insert into GROUP_NAMES values ('$nom','$gen')";
+ $qu  = Query $dbproc $ist;
+ print "submitted $gen\n"; 
+}
+else {print "this genre already exits\n";} 
+
+
+
+
+
+
+
+
+
+
+if (!($lab eq  $tar[0]))
+{
+
+
+ $tmo = "insert into LABEL values ($rows2,'$lab','$labloc')";
+ $que  = Query $dbproc $tmo;
+ print "submitted $lab\n";
+}
+else {print "this label already exits\n";}
+
+
+
+
+
+
+
+
+
+$mkm = "Select GROUP_URLS.URL from GROUP_URLS where
+GROUP_URLS.GROUP_NAME = '$nom' and GROUP_URLS.URL = '$groupurl'";
+ $pla = Query $dbproc $mkm;
+
+$rows3=$pla->numrows;
+++$rows3;
+
+
+@arr = FetchRow $pla;
+$new = $arr[0];
+
+
+if (!($groupurl eq  $arr[0]))
+{
+
+ $vt = "insert into GROUP_URLS values ($rows3,'$nom','$groupurl')";
+ $acii  = Query $dbproc $vt;
+ print "submitted $groupurl\n";
+}
+else {print "the url already exits\n";}
+
+
+
+
+
+
+
+
+
+
+
+@taz = FetchRow $pla;
+$new = $arr[0];
+
+if (!($soundurl eq  $taz[0]))
+{
+
+ $vt = "insert into SOUNDS values ($rows4,$rows,'$soundurl')";
+ $acii  = Query $dbproc $vt;
+ print "subitted $soundurl\n";
+}
+else {print "the sound url already exits\n";}
+
+
+
+
+#print "<a href="http:../add2.html">back</a>";
+
+
+
+
+
+
+print $cgiQuery->start_html("");
+
+
+
+
+print $cgiquery->end_html;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
