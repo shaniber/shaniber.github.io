@@ -91,6 +91,14 @@ let config={
                 {
                     name:"Defold Game Engine",
                     url:"https://defold.com/"
+                },
+                {
+                    name:"CPSS, A Capcom CPS-1 SDK",
+                    url:"https://fabiensanglard.net/ccps/"
+                },
+                {
+                    name:"The Book of CP-System",
+                    url:"https://github.com/fabiensanglard/cpsb"
                 }
             ]
         }
