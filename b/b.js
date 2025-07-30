@@ -101,6 +101,15 @@ let config={
                     url:"https://github.com/fabiensanglard/cpsb"
                 }
             ]
+        },
+        {
+            name:"Retro Games",
+            links: [
+                {
+                    name:"The Stunts Racing Portal - a site about the 90s Brøderbund game",
+                    url:"https://stunts.hu/"
+                }
+            ]
         }
 
         /*
